@@ -1,0 +1,39 @@
+<html>
+  <head><title>while loop </title></head>
+<body>
+<script>
+document.write("while loop");
+
+var i=0;
+while(true) //while(i<5);
+{
+if(i==5)
+{
+  break;
+}
+  document.write(i);
+  i++;
+  document.write("<br>");
+}
+
+//nested while
+var j=0;
+while(j<3)
+{
+  document.write("outer loop");
+  document.write(j);
+    j++;
+  document.write("<br>");
+   var k=0;
+   while(k<5)
+    {
+	   document.write("inner loop");
+	   document.write(k);
+	   k++;
+	   document.write("<br>");
+	}
+
+}
+</script>
+</body>
+</html>

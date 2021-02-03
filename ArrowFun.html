@@ -1,0 +1,38 @@
+<html>
+ <head><title></title>
+ </head>
+<body>
+ <script>
+   /*  // Function Expresion
+     
+	 var myfun1=function show()
+	             {
+				  document.write("Function Expresion");
+				 };
+	 
+	 //Anonymous Function
+	 var myfun2=function()
+	            {
+				 document.write("Function Anonymous");
+				};   */
+				
+	 //Arrow Function
+	  var myfun = ()=>{
+	    document.write("Arrow Function<br>");
+	  };
+	  
+	  var myfunX=(a,...rest)=>{
+	     document.write(a+" "+rest);
+		 document.write("<br>Dhan<br>");
+	  }
+	  
+	    var myfunN=c=>c;  //if we return 1 variable  //  var myfunN=c=>{c};  ...not work 
+	  //  (d,e)=>d+e;
+        		
+	 myfun();
+	 myfunX(1,2,3,4);
+	 document.write(myfunN(90));
+	
+ </script>
+</body>
+</html>

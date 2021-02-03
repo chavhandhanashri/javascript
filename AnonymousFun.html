@@ -1,0 +1,41 @@
+<html>
+<head><title></title>
+</head>
+<body>
+  <script>
+     //Anonymous fun=creation of fun which have no name 
+
+     var a=function(c,b)
+	 {
+	   document.write(c+b);
+	   document.write("Anonymous Function<br>");
+	 }
+	 a(1,2);
+	 
+	 //Passing Anonymous fun As Argument
+	   function dis(myFun)
+	   {
+	       return myFun();
+	   }
+       document.write(dis(function()
+	                       {
+						     return "Dhanashri";
+						   }
+	   ));
+	   document.write("<br>");
+	   
+	   // Returning Anonymous Fun
+         
+        function display(a)
+         {
+		      return function()
+ 			         {
+				       return a;
+				     };
+		 }	
+		 var af=(display(10));
+		 document.write(af());
+	   
+  </script>
+</body>
+</html>

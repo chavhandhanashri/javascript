@@ -1,0 +1,23 @@
+<html>
+<head><title>Rest Parameter</title>
+</head>
+<body>
+  <script>
+     //rest parameter
+	 function show(a, ...args)
+	 {
+	   document.write(a+"<br>");
+	   document.write(args);
+	 }
+      show(10,20,30,40);
+	  document.write("<br>");
+	  function shown(a,b,...num)
+	 {
+	   //document.write(a+"<br>");
+	   document.write(num[0]+"<br>");
+	   document.write(num);
+	 }
+      shown(1,2,3,4,5);
+ </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+ <head>
+    <title>LOCAL GLOBAL</title>
+ </head>
+ <body>
+ <script>
+  var i="i am global";
+  function show()
+ {
+     k="global variable inside function";
+   document.write(i+"<br>"); // inside function
+  // document.write(j);
+ }  
+  show();
+ document.write(i+"<br>");   //out side function
+   function disp()
+   {
+     var j="i am local variable";
+     document.write(j+"<br>");
+   }
+    disp();
+	//document.write(j+"<br>");
+	document.write(k+"<br>");
+	//nested function accesibility
+	 
+	function outer()
+	{
+	   var m="m local var of outer fun";
+	    document.write(m+"<br>");
+		function inner()
+		 {
+		     var n="n local var of inner fun";
+			 document.write(n+"<br>");
+			 document.write(m+"<br>");
+		 }
+		  inner();
+		  //document.write(n+"<br>"); // not allowed
+	}
+	outer();
+	
+ </script>
+ </body>
+</html>
